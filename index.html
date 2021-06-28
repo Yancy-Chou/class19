@@ -5,34 +5,48 @@
     <style>
       div.a {
         word-wrap: break-word;
+        animation-name:shiver;
+        animation-duration: 2s;
+        position: relative;
+        animation-iteration-count: infinite;
+      }
+      span.a {
+        word-wrap: break-word;
+        animation-name:shiver;
+        animation-duration: 1s;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
       }
       h1 {font-family:STSong}
       h2 {font-family:STSong}
       p {font-family:STSong}
+      a {text-decoration: none; color:inherit;}
+      @keyframes shiver{
+        0% {left: 0px; top: 0px;}
+        10% {left: 5px; top: 3px;}
+        20% {left: -2px; top: 6px;}
+        30% {left: 5px; top: -4px;}
+        40% {left: 2px; top: 7px;}
+        50% {left: 1px; top: -1px;}
+        60% {left: -5px; top: 6px;}
+        70% {left: 3px; top: 2px;}
+        80% {left: 0px; top: -1px;}
+        90% {left: -2px; top: 5px;}
+        100% {left: 0px; top: 0px;}
+      }
+      
     </style>
   </head>
   <body>
-    <h1 style="color:red">南通中学高一19班</h1>
+    <div class="a"><h1 style="color:red" align="center">南通中学高一19班</h1></div>
+    
     <hr />
     <p style="color:red">欢迎来到本网站!</p>
-    <h2>王♂的指引</h2>
+    <h2>王<span class="a">♂</span>的指引</h2>
     <p><a href="website/pagephilomain.html">[哲♂教]</a></p>
     <p><a href="website/pageglorymain.html" target="_self">[辉煌公司]</a></p>
     <p><a href="website/pagedogmain.html" target="_self">[狗贼大队]</a></p>
     <p><h2>告示</h2></p>
-    <style>
-    @keyframes example {
-      from {background-color: red;}
-      to {background-color: yellow;}
-    }
-    div {
-      width: 100px;
-      height: 100px;
-      background-color: red;
-      animation-name: example;
-      animation-duration: 4s;
-    }
-    </style>
-    <div>Woohoo!</div>
   </body>
 </html>
