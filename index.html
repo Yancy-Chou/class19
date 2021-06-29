@@ -1,52 +1,96 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>通中19班</title>
-    <style>
-      div.a {
-        word-wrap: break-word;
-        animation-name:shiver;
-        animation-duration: 2s;
-        position: relative;
-        animation-iteration-count: infinite;
-      }
-      span.a {
-        word-wrap: break-word;
-        animation-name:shiver;
-        animation-duration: 1s;
-        position: relative;
-        animation-iteration-count: infinite;
-        animation-delay: 1s;
-      }
-      h1 {font-family:STSong}
-      h2 {font-family:STSong}
-      p {font-family:STSong}
-      a {text-decoration: none; color:inherit;}
-      @keyframes shiver{
-        0% {left: 0px; top: 0px;}
-        10% {left: 5px; top: 3px;}
-        20% {left: -2px; top: 6px;}
-        30% {left: 5px; top: -4px;}
-        40% {left: 2px; top: 7px;}
-        50% {left: 1px; top: -1px;}
-        60% {left: -5px; top: 6px;}
-        70% {left: 3px; top: 2px;}
-        80% {left: 0px; top: -1px;}
-        90% {left: -2px; top: 5px;}
-        100% {left: 0px; top: 0px;}
-      }
-      
-    </style>
-  </head>
-  <body>
-    <div class="a"><h1 style="color:red" align="center">南通中学高一19班</h1></div>
+    <head>
+        <title>南通中学19班</title>
+        <style>
+            @keyframes button_color{
+                0% {background-color: white;}
+                20% {background-color: lightgoldenrodyellow}
+                40% {background-color: rgb(255, 243, 175)}
+                60% {background-color: rgb(250, 231, 127)}
+                80% {background-color: rgb(246, 221, 81)}
+                100% {background-color: gold}}
+
+            div.link:hover {
+            animation: button_color;
+            animation-duration: 0.2s;
+            background-color: gold;
+            font-family: STSong;}
+            
+            div.link {
+            width: 100px;
+            font-size:20px;
+            word-wrap: break-word;
+            text-align:center;
+            font-family: STSong;
+            min-height: 30px;}
+            a {text-decoration: none;
+            color:inherit}
+            
+            body {background-color: lightgoldenrodyellow}
+            
+            @keyframes bold{
+                100% {font-weight: bold; color: tomato;}
+            }
+            
+            h1 {font-family: STSong;
+            font-weight: normal;
+            text-align: center;}
+            
+            h2, h3 {font-family: STSong;
+            font-weight: normal;}
+            
+            p {font-family: STSong;}
+            
+            h1:hover {animation: bold;
+            animation-duration: 0.2s;
+            font-weight: bold;
+            color:tomato}
+        
+            h2:hover, h3:hover {animation: bold;
+            animation-duration: 0.2s;
+            font-weight: bold;
+            color:tomato}
+        
+            div.container {border: 1px solid;
+            border-color: orange;
+            max-width: 100px;
+            height: 500px;
+            display:inline-block;}
     
-    <hr />
-    <p style="color:red">欢迎来到本网站!</p>
-    <h2>王<span class="a">♂</span>的指引</h2>
-    <p><a href="website/pagephilomain.html">[哲♂教]</a></p>
-    <p><a href="website/pageglorymain.html" target="_self">[辉煌公司]</a></p>
-    <p><a href="website/pagedogmain.html" target="_self">[狗贼大队]</a></p>
-    <p><h2>告示</h2></p>
-  </body>
+            @keyframes shiver{
+            0% {left: 0px; top: 0px;}
+            10% {left: 5px; top: 3px;}
+            20% {left: -2px; top: 6px;}
+            30% {left: 5px; top: -4px;}
+            40% {left: 2px; top: 7px;}
+            50% {left: 1px; top: -1px;}
+            60% {left: -5px; top: 6px;}
+            70% {left: 3px; top: 2px;}
+            80% {left: 0px; top: -1px;}
+            90% {left: -2px; top: 5px;}
+            100% {left: 0px; top: 0px;}
+            }
+
+            div.noti {animation: shiver;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            color:red;
+            position: relative;}
+        </style>
+    </head>
+    <body>
+        <h1>南通中学19班 - 主页</h1>
+        <div class="noti"><p align="center">首页改版！</p></div>
+        <hr />
+        <h2>王♂的指引</h2>
+        <div class="container">
+            <a href="website/pagephilomain.html"><div class="link">哲♂教</div></a>
+            <a href="website/pageglorymain.html" target="_self"><div class="link">辉煌公司</div></a>
+            <a href="website/pagedogmain.html" target="_self"><div class="link">狗贼大队</div></a>
+            <p>待续... ...</p>
+        </div>
+        <p><h2>告示</h2></p>
+        <p>首页今日改版 ———— 技术支持 2021.6.29 5:44 p.m.</p>
+        <a href="old_index.html"><div class="link">老版首页</div></a>
+    </body>
 </html>
